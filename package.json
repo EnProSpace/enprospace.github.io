@@ -2,5 +2,8 @@
   "name": "enprospace",
   "version": "1.0.0",
   "description": "EnProSpace site",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.7.0"
+  }
 }
