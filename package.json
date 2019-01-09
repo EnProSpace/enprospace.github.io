@@ -4,6 +4,16 @@
   "description": "EnProSpace site",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.7.0"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production"
   }
 }
