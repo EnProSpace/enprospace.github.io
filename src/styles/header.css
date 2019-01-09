@@ -1,13 +1,18 @@
 #header {
   display:  block;
-  height: 40px;
-  width: 160px;
   position: fixed;
   width: 100%;
   height: 40px;
   top: 0;
   left: 0;
+  vertical-align: top;
   text-align: right;
   background-color: #151c3a;
   color: #fff;
+}
+
+#header img {
+  position: fixed;
+  left:-5px;
+  top:-5px;
 }
