@@ -1,0 +1,29 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rad-1 {
+  border-radius: 5px;
+}
+
+body {
+  background-color: #151c3a;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  color: #fff;
+}
+
+h1 {
+  border-top: #1b224c solid 2px;
+  width: 100%;
+  text-align: center;
+  font-size: 45pt;
+}
