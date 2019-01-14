@@ -27,7 +27,7 @@ h1 {
   font-size: 45pt;
 }
 
-/* 
+
 ::-webkit-scrollbar {
     width: 2px;
 }
@@ -38,4 +38,4 @@ h1 {
 ::-webkit-scrollbar-thumb {
     background: #888;
     box-shadow: inset 1px 1px 0.5px rgba(0,0,0,0.2);
-} */
+} 
