@@ -1,0 +1,17 @@
+#services {
+  display: flex;
+  padding: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  height: 256px;
+  width: 256px;
+  border: #444 solid 1.5px;
+  margin: 10px;
+  text-align: center; 
+  font-size: 25pt;
+}
+
