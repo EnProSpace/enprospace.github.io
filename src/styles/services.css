@@ -7,11 +7,25 @@
 }
 
 .product {
-  height: 256px;
+  height: 280px;
   width: 256px;
   border: #444 solid 1.5px;
   margin: 10px;
   text-align: center; 
-  font-size: 25pt;
 }
 
+.product button {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1b224c;
+  outline: none;
+  font-size: 15pt;
+}
+
+
+.product button:hover {
+  transition: background-color 0.25s ease 0s;
+  background-color: #242d63
+}
