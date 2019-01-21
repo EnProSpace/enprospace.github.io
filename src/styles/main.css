@@ -41,3 +41,12 @@ h1 {
     background: #888;
     box-shadow: inset 1px 1px 0.5px rgba(0,0,0,0.2);
 } 
+
+#fileselectdialog {
+  display: inline-block;
+  padding-top: 15px;
+  font-size: 25pt;
+  background-color: #151c3a;
+  border-radius: 5px;
+  color: #fff;
+}
