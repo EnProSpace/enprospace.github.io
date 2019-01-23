@@ -35,9 +35,9 @@ export default async function (product) {
   if (products[product].needFile) {
     let dropper;
     await Swal.fire({
-      title: "Выберете файл",
+      title: "Выберите файл",
       html:
-        '<div id="fileselectdialog" style="width:300px;height:100px;">Выберете файл</div>',
+        '<div id="fileselectdialog" style="width:300px;height:100px;">Выберите файл</div>',
 
       onOpen: function () {
         dropper = new Droppable({
@@ -46,7 +46,7 @@ export default async function (product) {
         dropper.onFilesDropped(function (files) {
           const reader = new FileReader();
           dropper.destroy();
-          reader.onload = function (e) { 
+          reader.onload = function (e) {
             Swal.close()
             file = e.target.result
           };
@@ -57,6 +57,25 @@ export default async function (product) {
   }
 
   if (!email) return;
+  var xhr = new XMLHttpRequest();
 
+  var json = JSON.stringify({
+    nick,email,file,product
+  });
+
+  xhr.open("POST", 'http://localhost:8085/order', true)
+  xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+
+  xhr.onreadystatechange = function () {
+    Swal.fire(
+      'Принято',
+      'ID:' + xhr.responseText,
+      'success'
+    )
+  };
+
+  // Отсылаем объект в формате JSON и с Content-Type application/json
+  // Сервер должен уметь такой Content-Type принимать и раскодировать
+  xhr.send(json);
   console.log(nick, email, file.substr(0, 20))
 }
